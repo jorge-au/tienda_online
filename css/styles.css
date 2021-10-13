@@ -3,83 +3,104 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* header */
-.header{
-    /* background-color: gray; */
-    width: 100%;
-    height: 100px;
+body{
+    background-color: #ebebeb;
+    font-family: 'Poppins', sans-serif;
 }
+/* header */
+/* .header{
+    background-color: gray;
+    width: 100%;
+    height: 80px;
+} */
 .nav{
     width: 100%;
-    height: 90px;
-    background-color: green;
+    height: 80px;
+    background-color:#C0C0C0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .nav__logo{
-    background-color: hotpink;
     height: auto;
     width: 100px;
     margin-left: 30px;
 }
-
+.nav__parrafo{
+    text-align: center;
+    font-size:1.3rem;
+    font-weight: 600;
+    padding: 5px;
+}
 .nav__menu{
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 .nav__item{
-    background-color: khaki;
     height: auto;
     width: 100px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #000000;
 }
 .nav__icons{
     display: flex;
-    background-color: peru;
     height: 70px;
     width: 200px;
     margin-right: 30px;
-
+    justify-content: center;
 }
 .nav__lupa{
-    background-color: palevioletred;
-    width: 100px;
+    width: 90px;
     height: auto;
+}
+.nav__img_lupa{
+    width: 25%;
+    position: relative;
+    top: 20px;
+    left: 33px;
 }
 .nav__carrito{
-    background-color: rgb(101, 189, 181);
-    width: 100px;
+    width: 90px;
     height: auto;
 }
+.nav__img_car{
+    width: 25%;
+    position: relative;
+    top: 20px;
+    left: 33px;
+}
 
+
+/* ********************************************************* */
 /* Seccion principal */
 /* carousel */
 .section__inicio{
     width: 100%;
-    height: 100vh;
-    background-color: #99ccff;
-    margin-bottom: 20px;
+    height: 90vh;
+    /* background-color: #99ccff; */
 }
 .img__carousel{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
 
-
+/******************************************************** */
 /* Biografia */
 .nosotros{
     width: 100%;
-    height: 600px;
-    background-color: #0073e6;
-    margin-bottom: 20px;
+    height: 100vh;
+    /* background-color: #0073e6; */
     position: relative;
-    
+    margin-top: 80px;
 }
 .nosotros__caja1{
     width: 300px;
     height: 50px;
-    background-color: #ffcc99;
+    /* background-color: #ffcc99; */
     position: relative;
     left: 500px;
     top: 10px;
@@ -87,18 +108,27 @@
 .nosotros__caja2{
     width: 600px;
     height: 400px;
-    background-color: #ff9966;
+    /* background-color: #ff9966; */
     position: absolute;
     left: 50px;
-    top: 100px;
+    top: 130px;
+}
+.nosotros__parrafo{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 50px;
 }
 .nosotros__caja3{
     width: 600px;
     height: 400px;
-    background-color:#ffff66;
+    /* background-color:#ffff66; */
     position: absolute;
     right: 50px;
-    top: 100px;
+    top: 130px;
+}
+.nosotros__imagen{
+    width: 100%;
+    border-radius: 3px;
 }
 
 
@@ -106,12 +136,13 @@
 /* Productos */
 .productos{
     width: 100%;
-    height: auto;
+    height: 1100px;
     background-color: #0059b3;
-    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    margin-top:80px;
+    margin-bottom: 80px;
 }
 .productos__titulo{
     width: 300px;
@@ -126,8 +157,6 @@
     background-color: #cc3399;
     margin-top: 100px;
     margin-left: 25px;
-    
-   
 }
 .productos__pc1{
     width: 100%;
@@ -175,7 +204,7 @@
     width: 100%;
     height: 500px;
     background-color: #b3d9ff;
-    margin-bottom: 20px;
+   
 }
 
 .section__contacto{
