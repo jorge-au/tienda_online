@@ -3,10 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #ebebeb;
-    font-family: 'Poppins', sans-serif;
-}
+
 /* header */
 /* .header{
     background-color: gray;
@@ -16,7 +13,7 @@ body{
 .nav{
     width: 100%;
     height: 80px;
-    background-color:#C0C0C0;
+    background-color:#d6d6d6;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,7 +90,7 @@ body{
 .nosotros{
     width: 100%;
     height: 100vh;
-    /* background-color: #0073e6; */
+    background-color: #d6d6d6;
     position: relative;
     margin-top: 80px;
 }
@@ -136,87 +133,128 @@ body{
 /* Productos */
 .productos{
     width: 100%;
-    height: 1100px;
-    background-color: #0059b3;
+    height: 1000px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 400px);
     margin-top:80px;
-    margin-bottom: 80px;
 }
 .productos__titulo{
     width: 300px;
     height: 50px;
-    background-color: rgb(54, 196, 54);
     position: absolute;
     left: 40%;
 }
 .productos__contenedor{
     width: 280px;
     height: 400px;
-    background-color: #cc3399;
     margin-top: 100px;
     margin-left: 25px;
 }
 .productos__pc1{
     width: 100%;
-    height: 350px;
-    background-color:#6699ff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-}
-.productos__cuerpo{
-    background-color: mediumslateblue;
-    width: 100%;
-    height: auto;
+    justify-content: space-between;
 }
 .productos__laptop{
     width: 100%;
     height: auto;
+    
 }
+.productos__cuerpo{
+    width: 100%;
+}
+
 .productos__parrafo{
     text-align: center;
-    background-color: mediumpurple;
+    font-size: 1.1rem;
+    margin-top: 2px;
 }
 .productos__precio{
-  background-color: lightslategrey;
   text-align: center;
+  font-size: 1rem;
 }
 .productos__boton{
-    margin-top: 20px;
     margin-left: 35%;
 }
-    .productos__botonComprar{
-        border: 1px solid black;
-        font-size: 1.1rem;
-        padding: 5px 10px;
-        text-align: center;
-    }
-
+.productos__botonComprar{
+    border: 1px solid black;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #0189C5;
+    color: #fff;
+    border: 2px solid;
+    width: 100px;
+}
+.productos__botonComprar:hover{
+    background-color:#45aeeb ;
+}
 
 
 /********************************************************/
 /* Servicios */
 .section__servicios{
     width: 100%;
-    height: 500px;
-    background-color: #b3d9ff;
-   
+    height: 670px;
+    background-color: #d6d6d6;
+    margin-top: 50px;
+}.servicios__titulo{
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    left: 40%;
 }
 
+.padre{
+    width: inherit;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap:10px;
+    margin-top: 70px;
+    
+}
+.hijos{
+    /* background-color: orange; */
+    width: 250px;   
+    height: 260px;
+}
+.ventas{
+    /* background-color: lightseagreen; */
+    width: 70px;
+    height: 80px;
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.ventas__subtitulo{
+    text-align: center;
+}
+.ventas__texto{
+    text-align: center;
+}
+/* ****************************************************** */
+/* Contacto */
 .section__contacto{
     width: 100%;
     height: 500px;
     background-color: #80bfff;
-    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
+/* ******************************************************* */
 /* Pie de pagina */
 .footer{
     width: 100%;
     height: 200px;
     background-color: #98e6e6;
+    margin-top: 50px;
 }
