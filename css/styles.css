@@ -13,7 +13,7 @@
 .nav{
     width: 100%;
     height: 80px;
-    background-color:#d6d6d6;
+    background-color:#ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,12 +77,12 @@
 /* carousel */
 .section__inicio{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     /* background-color: #99ccff; */
 }
 .img__carousel{
-    width: 100%;
-    height: 90vh;
+    width: 90%;
+    max-height: 90vh;
 }
 
 /******************************************************** */
@@ -90,7 +90,7 @@
 .nosotros{
     width: 100%;
     height: 100vh;
-    background-color: #d6d6d6;
+    background-color: #e8e8e8;
     position: relative;
     margin-top: 80px;
 }
@@ -138,6 +138,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 400px);
     margin-top:80px;
+    background-color: #ffffff;
 }
 .productos__titulo{
     width: 300px;
@@ -201,7 +202,7 @@
 .section__servicios{
     width: 100%;
     height: 670px;
-    background-color: #d6d6d6;
+    background-color: #e8e8e8;
     margin-top: 50px;
 }.servicios__titulo{
     height: 50px;
@@ -245,11 +246,70 @@
 /* Contacto */
 .section__contacto{
     width: 100%;
-    height: 500px;
-    background-color: #80bfff;
+    height: 800px;
+    /* background-color: #80bfff; */
     margin-top: 50px;
+    position: relative;
 }
-
+.form__titulo{
+   padding: 30px 0;
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 2.2rem;
+}
+.form{
+    /* background-color: blueviolet; */
+    height: auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+}
+.form__label{
+   font-size: 1.2rem;
+   margin-left: 20px;
+   margin-bottom: 10px;
+   color: #525252;
+}
+.form__input{
+    width: 80%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    height: 40px;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+}
+.form__textarea{
+    width:80%;
+    margin-left: 20px;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+}
+.form__boton{
+    width: 25%;
+    margin-left: 20px;
+    margin-top: 15px;
+    padding: 4px 10px;
+    border: 2px solid #d6d6d6;
+    border-radius: 6px;
+    background-color: #575757;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.form__boton:hover{
+    background-color:#c2c2c2;
+}
+.imagen_derecha{
+    width: 500px;
+    height: 420px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+.sobre{
+    width: 100%;
+}
 /* ******************************************************* */
 /* Pie de pagina */
 .footer{
