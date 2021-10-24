@@ -86,7 +86,7 @@
 /* carousel */
 .section__inicio{
     width: 100%;
-    height: 90vh;
+    height: calc(100vh - 80px);
     /* background-color: #99ccff; */
 }
 .img__carousel{
@@ -106,7 +106,6 @@
 .nosotros__caja1{
     width: 300px;
     height: 50px;
-    /* background-color: #ffcc99; */
     position: relative;
     left: 500px;
     top: 10px;
@@ -114,7 +113,6 @@
 .nosotros__caja2{
     width: 600px;
     height: 400px;
-    /* background-color: #ff9966; */
     position: absolute;
     left: 50px;
     top: 130px;
@@ -127,7 +125,6 @@
 .nosotros__caja3{
     width: 600px;
     height: 400px;
-    /* background-color:#ffff66; */
     position: absolute;
     right: 50px;
     top: 130px;
@@ -148,7 +145,6 @@
     grid-template-rows: repeat(2,500px);
     margin-top:80px;
     background-color: #ffffff;
-    /* background-color: rgb(32, 143, 21); */
     position: relative;
 }
 .productos__titulo{
@@ -162,7 +158,6 @@
     height: 500px;
     margin-top: 100px;
     margin-left: 25px;
-    /* background-color: blueviolet; */
 }
 .productos__pc1{
     width: 100%;
@@ -369,6 +364,7 @@
     margin-top: 20px;
 }
 
+
 /* *********************************************** */
 /* Media query para Tablet */
 @media  (max-width: 768px) {
@@ -376,11 +372,9 @@
         height: 100px;
     } 
     .nav{
-        /* background-color: lime; */
         height: 100px;
         display: flex;
-        justify-content: space-between;
-
+        justify-content: space-around;
     }
     .nav__logo{
         margin-top: 10px;
@@ -389,20 +383,15 @@
     .nav__menu{
         position: absolute;
         top: 100px;
-        /* background-color: mediumorchid; */
-        width: 70%;
-        left: 120px;
         z-index: 15;
     }
-    .nav__items{
-       text-align: center;
-    }
     .section__inicio{
-        height: 80vh;
-        margin-top: 50px;
+        margin-top: 80px;
+        height: auto;
     }
     .img__carousel{
         width: 100%;
+        height: auto;
     }
     .nosotros{
         height: 80vh;
@@ -474,7 +463,6 @@
         right: 90px;
     }
     .form{
-        /* background-color: grey; */
         position: relative;
         left: 20px;
     }
@@ -489,4 +477,133 @@
     }
     
 }
+
+/* Query ppara celular */
 /********************************************************************/
+@media (max-width: 320px){
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav__menu{
+        position: fixed;
+        top: 100px;
+        background-color: rgb(62, 105, 161);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+    .nav__items{
+       text-align: center;
+    }
+    .nav__icons{
+        display: none;
+    }
+    .hamb{
+        display: block;
+        margin-right: 20px;
+    }
+    .hamb__icon{
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    .hamb__input{
+        display: none;
+    }
+    #hamb:checked + .nav__menu{
+        display: block;
+    }
+    .section__inicio{
+        margin-top: 0;
+    }
+    .img__carousel{
+        width: 100%;
+    }
+    .nosotros{
+        width: 100%;
+        height: 800px;
+    }
+    .nosotros__caja1{
+        left: 10px;
+        
+    }
+    .nosotros__parrafo{
+        font-size: 1rem;
+    }
+    .nosotros__caja3{
+        position: absolute;
+       top: 500px;
+       background-color: #5252ff;
+       width: 100%;
+       height: auto;
+       left: 0;
+    }
+    .nosotros__imagen{
+        width: 100%;
+    }
+    .productos{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-self: center;
+
+    }
+    .productos__titulo{
+        left: 10px;
+    }
+    .productos__contenedor{
+       margin-top: 10px;
+    }
+    .tienda{
+        width: 100%;
+        left: 0;
+    }
+    .tienda__boton{
+        margin-left: 50px;
+    }
+    .section__servicios{
+        height: auto;
+    }
+    .padre{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .section__contacto{
+     
+        width: 100%;
+    }
+    .form{
+    
+        width: 93%;
+        margin-left:-8px;
+    }
+    .form__label{
+        font-size: 1.2rem;
+    }
+    .form__input{
+        width: 98%;
+        margin-left: 5px;
+    }
+    .form__textarea{
+        width: 98%;
+        margin-left: 5px;
+    }
+    .form__boton{
+        width: 50%;
+        margin-left: 70px;
+    }
+    .footer{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .enlaces__items{
+        text-align: center;
+    }
+
+
+}
